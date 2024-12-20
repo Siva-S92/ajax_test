@@ -4,8 +4,8 @@ export function dataBaseConnection(){
     
     try {
         mongoose.connect(process.env.MONGO_URL);
-        console.log("MongoDB connected");
+        console.log("Database connected");
     } catch (err) {
-        console.log("MongoDB Connection Failed", err);
+        console.log("Database Connection Failed", err);
     };
 };

@@ -2,7 +2,7 @@ import axios from "axios";
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { message } from "antd";
-import { backend } from "../constant";
+import { backend } from "../constant.js";
 
 function Upload() {
   const [author, setAuthor] = useState("");

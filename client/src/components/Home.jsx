@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 import ContentCard from "./ContentCard";
 import axios from "axios";
 import { message } from "antd";
-import { backend } from "../constant";
+import { backend } from "../constant.js";
 
 
 function Home() {
