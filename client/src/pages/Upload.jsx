@@ -2,6 +2,7 @@ import axios from "axios";
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { message } from "antd";
+import { backend } from "../constant";
 
 function Upload() {
   const [author, setAuthor] = useState("");
@@ -28,7 +29,7 @@ function Upload() {
       description,
     };
     const response = await axios.post(
-      `http://localhost:5000/api/upload`,
+      `${backend}/api/upload`,
       contents,
       {
         headers: {

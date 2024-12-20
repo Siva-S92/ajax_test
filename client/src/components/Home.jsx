@@ -6,6 +6,7 @@ import { Link } from "react-router-dom";
 import ContentCard from "./ContentCard";
 import axios from "axios";
 import { message } from "antd";
+import { backend } from "../constant";
 
 
 function Home() {
@@ -14,7 +15,7 @@ function Home() {
 
     const fetchData = async() => {
         try {
-            const res = await axios.get(`http://localhost:5000/api/all-posts`)
+            const res = await axios.get(`${backend}/api/all-posts`)
             if(res.data.success){
                 setContents(res.data.contents)
                 console.log(res.data.contents)
